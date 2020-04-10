@@ -1,18 +1,11 @@
 package main
 
-import "fmt"
-
-// Hello struct
-type Hello struct {
-	it int
-	na string
-}
+import (
+	"github.com/jianbo-zh/gbird/package/netexample"
+)
 
 func main() {
-	amap := make(map[*Hello]bool)
+	netexample.UnixServer()
+	// netexample.UnixClient()
 
-	hel := &Hello{1, "me"}
-	amap[hel] = true
-
-	fmt.Printf("%v", amap)
 }

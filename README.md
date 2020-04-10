@@ -1,1 +1,1 @@
-#buffalo
+Golang Example
